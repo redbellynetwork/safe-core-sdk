@@ -1,0 +1,70 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## 4.0.0 (2023-12-05)
+
+### ⚠ BREAKING CHANGES
+
+- use type string for uint256 parameters (#404)
+
+### Features
+
+- **account-abstraction-kit:** unit tests ([#571](https://github.com/redbellynetwork/safe-core-sdk/issues/571)) ([e277fd9](https://github.com/redbellynetwork/safe-core-sdk/commit/e277fd96669e4e6a34b8702e6b88503c1bf2b178))
+- add `decodeMultiSendData` function ([96465d9](https://github.com/redbellynetwork/safe-core-sdk/commit/96465d9fee6255a0c6a11f2345be8d4c61ebe4ba))
+- Add ens lookup functions ([964c82c](https://github.com/redbellynetwork/safe-core-sdk/commit/964c82c88f69086a93a82f716a5290152912ed0c))
+- add missing `proposer` field to `SafeMultisigTransactionWithTransfersResponse` ([#622](https://github.com/redbellynetwork/safe-core-sdk/issues/622)) ([2216f6f](https://github.com/redbellynetwork/safe-core-sdk/commit/2216f6fda69147a1959d7ed46f65d8e7fa3bd6de))
+- **auth-kit:** Expose the getUserInfo() method from web3auth ([#420](https://github.com/redbellynetwork/safe-core-sdk/issues/420)) ([ec26de8](https://github.com/redbellynetwork/safe-core-sdk/commit/ec26de88a2d7828becab86c56d32f5960641e730))
+- **auth-kit:** SafeAuthPack ([#575](https://github.com/redbellynetwork/safe-core-sdk/issues/575)) ([9305d0c](https://github.com/redbellynetwork/safe-core-sdk/commit/9305d0c625046a269883a2e4f9962969cc572755))
+- Coverage comments ([#470](https://github.com/redbellynetwork/safe-core-sdk/issues/470)) ([bd9eeda](https://github.com/redbellynetwork/safe-core-sdk/commit/bd9eeda3143fe3c5c177aec3539eb8ceb0f4170c))
+- Ethers v6 Migration ([#549](https://github.com/redbellynetwork/safe-core-sdk/issues/549)) ([9d7f6ce](https://github.com/redbellynetwork/safe-core-sdk/commit/9d7f6ce8e22d8e18704c753fb3c124d18a05f239)), closes [#553](https://github.com/redbellynetwork/safe-core-sdk/issues/553)
+- Move packages to protocol-kit ([#366](https://github.com/redbellynetwork/safe-core-sdk/issues/366)) ([1e588e4](https://github.com/redbellynetwork/safe-core-sdk/commit/1e588e485475e1fa826ed02ce4ee2cbfbb8fdafb))
+- **onramp-kit:** Monerium integration ([#372](https://github.com/redbellynetwork/safe-core-sdk/issues/372)) ([fb98dc5](https://github.com/redbellynetwork/safe-core-sdk/commit/fb98dc5de67a85f9d0caab636005e4b01cb62fb6))
+- **protocol-kit:** Add memoization to the predictSafeAddress util function to enhance its performance ([#445](https://github.com/redbellynetwork/safe-core-sdk/issues/445)) ([a9afbe6](https://github.com/redbellynetwork/safe-core-sdk/commit/a9afbe60277b94c5f33affbbab6a2c3c5244b20e))
+- **protocol-kit:** predict safe address util ([#415](https://github.com/redbellynetwork/safe-core-sdk/issues/415)) ([f7cd9f6](https://github.com/redbellynetwork/safe-core-sdk/commit/f7cd9f6d9444855d97e37d10c51fb853b7364636))
+- **protocol-kit:** support undeployed Safes ([#371](https://github.com/redbellynetwork/safe-core-sdk/issues/371)) ([a24068c](https://github.com/redbellynetwork/safe-core-sdk/commit/a24068c2feeff7f3674cf97adc54f8e1e91e113f)), closes [#395](https://github.com/redbellynetwork/safe-core-sdk/issues/395)
+- **relay-kit:** Add separate ERC20 transfer for fee payment with non-standard ERC20 tokens ([#496](https://github.com/redbellynetwork/safe-core-sdk/issues/496)) ([342dd62](https://github.com/redbellynetwork/safe-core-sdk/commit/342dd62e39d665dc321a02d8ecd1c94e14372874)), closes [#508](https://github.com/redbellynetwork/safe-core-sdk/issues/508)
+- **relay-kit:** Improve general structure and follow other packs style ([#534](https://github.com/redbellynetwork/safe-core-sdk/issues/534)) ([bd44202](https://github.com/redbellynetwork/safe-core-sdk/commit/bd44202e2aff97c83d315b182b8194194a102bf8))
+- **relay-kit:** make gas limit optional ([#414](https://github.com/redbellynetwork/safe-core-sdk/issues/414)) ([5b5fff3](https://github.com/redbellynetwork/safe-core-sdk/commit/5b5fff3dd797f99e705cde8b677e4d6ce2175c23))
+- upgrade dependencies ([#576](https://github.com/redbellynetwork/safe-core-sdk/issues/576)) ([e0761a8](https://github.com/redbellynetwork/safe-core-sdk/commit/e0761a8c764edfb1d22f5a6368707f4c5d4916a0))
+
+### Bug Fixes
+
+- `parseSafeTxGasErrorResponse` to improve error handling across providers ([#587](https://github.com/redbellynetwork/safe-core-sdk/issues/587)) ([d58dad9](https://github.com/redbellynetwork/safe-core-sdk/commit/d58dad9cdfd9b0718fd210dcf22f06869398c5ac))
+- **account-abstraction-kit:** use the protocol kit instead of the safeContract instance ([#431](https://github.com/redbellynetwork/safe-core-sdk/issues/431)) ([76c7a82](https://github.com/redbellynetwork/safe-core-sdk/commit/76c7a82bea905ee5be3e794f3e54035573efe4ec))
+- add edge case to parseSafeTxGasErrorResponse ([#589](https://github.com/redbellynetwork/safe-core-sdk/issues/589)) ([c6a73ca](https://github.com/redbellynetwork/safe-core-sdk/commit/c6a73ca91673e47416d4937a9783fde652fc01e8))
+- Add eth-ens-namehash package ([0ab298a](https://github.com/redbellynetwork/safe-core-sdk/commit/0ab298a32db9fe66b6083d93be211572be727327))
+- Add script to execute the tests ([#515](https://github.com/redbellynetwork/safe-core-sdk/issues/515)) ([9c85909](https://github.com/redbellynetwork/safe-core-sdk/commit/9c859097b2a3c5c5514d3e779d2732ac5c8d6f0d))
+- Add test ([3bf0f55](https://github.com/redbellynetwork/safe-core-sdk/commit/3bf0f558eebba455acb0235707338af4d80c7cfb))
+- Add try catch block to EthersAdapter ens lookups ([dca22c3](https://github.com/redbellynetwork/safe-core-sdk/commit/dca22c39a8b6362f78a5840c2a1dc0b2edc431a0))
+- adjust comment ([593fa78](https://github.com/redbellynetwork/safe-core-sdk/commit/593fa788f75319a450f0d3ee33bea7b6421c9d19))
+- **auth-kit:** Remove log causing wallet connection error ([3dfd771](https://github.com/redbellynetwork/safe-core-sdk/commit/3dfd77146962305862b59d572db388eed04f6f83))
+- **auth-kit:** wrap ApiKit instance creation with a try..catch ([#603](https://github.com/redbellynetwork/safe-core-sdk/issues/603)) ([784c2f8](https://github.com/redbellynetwork/safe-core-sdk/commit/784c2f8725c7123ab8e9d3a973787b2d0a4a7088))
+- broken playground types ([5e72bf5](https://github.com/redbellynetwork/safe-core-sdk/commit/5e72bf50411bfcbf8a21d6eda1e5aa48d32fde9a))
+- comment ([85a98ab](https://github.com/redbellynetwork/safe-core-sdk/commit/85a98abc34b4e7bccad095a8d9a9f08dd91cb0ea))
+- correct package name in safe-ethers-adapters ([0d1af55](https://github.com/redbellynetwork/safe-core-sdk/commit/0d1af55ceeb471b9e0bd8b6d05a4099e9e8d7788))
+- createTransaction to accept only transactions array ([#590](https://github.com/redbellynetwork/safe-core-sdk/issues/590)) ([15f4727](https://github.com/redbellynetwork/safe-core-sdk/commit/15f47278931507f54ae7966fcf0aec94d6e5045c))
+- encodedSafeTxGas incorrect split ([#595](https://github.com/redbellynetwork/safe-core-sdk/issues/595)) ([058f14c](https://github.com/redbellynetwork/safe-core-sdk/commit/058f14c0bd301ffae6e4c76c1ed2262040ddfcd8))
+- Fix aliases after build ([#389](https://github.com/redbellynetwork/safe-core-sdk/issues/389)) ([63479ea](https://github.com/redbellynetwork/safe-core-sdk/commit/63479eae017e117b34e6780cabaab2dc8574408a))
+- getNonce unit test ([#597](https://github.com/redbellynetwork/safe-core-sdk/issues/597)) ([abbe8ed](https://github.com/redbellynetwork/safe-core-sdk/commit/abbe8edb9bb37f57a03ccc74e94c3dc5148b0a78))
+- getServiceSingletons test ([#596](https://github.com/redbellynetwork/safe-core-sdk/issues/596)) ([31a65b4](https://github.com/redbellynetwork/safe-core-sdk/commit/31a65b4b8f30553524c4db2ea79b411b1535aea8))
+- Handle 0 safeTxGas when passed to createTransaction call ([2303ea2](https://github.com/redbellynetwork/safe-core-sdk/commit/2303ea2a7e54fde7e40e8fef93bc3c97ce222e62))
+- Move function declarations to EthAdapter and implement in EthersAdapter ([edcab2d](https://github.com/redbellynetwork/safe-core-sdk/commit/edcab2d84e3f780bb59ef34899058371da299c5b))
+- **onramp-kit:** Remove peerDeps for onramp kit ([#438](https://github.com/redbellynetwork/safe-core-sdk/issues/438)) ([2c5295f](https://github.com/redbellynetwork/safe-core-sdk/commit/2c5295fa8caf807a549412fcf68012e6c151df10))
+- **protocol-kit:** add ethers version warning ([#453](https://github.com/redbellynetwork/safe-core-sdk/issues/453)) ([163f58b](https://github.com/redbellynetwork/safe-core-sdk/commit/163f58bf4d37110d9e8097a9fe3e6189f7362a29))
+- **protocol-kit:** enable owner resolution for predicted safe ([#429](https://github.com/redbellynetwork/safe-core-sdk/issues/429)) ([6ee2440](https://github.com/redbellynetwork/safe-core-sdk/commit/6ee244057ba10e023d3658e46a143b45cb872c29))
+- **protocol-kit:** fix standardizeSafeTransactionData for predictedSafe flow ([#436](https://github.com/redbellynetwork/safe-core-sdk/issues/436)) ([fbcf100](https://github.com/redbellynetwork/safe-core-sdk/commit/fbcf1001236050f57111220770185165f39036c1))
+- **protocol-kit:** Only add executor signature if there are not enough signatures ([#472](https://github.com/redbellynetwork/safe-core-sdk/issues/472)) ([b9ac2b8](https://github.com/redbellynetwork/safe-core-sdk/commit/b9ac2b842cd7aff2e4f6d99eea799b3e8a629b2f))
+- **protocol-kit:** relax signer compatible check ([#373](https://github.com/redbellynetwork/safe-core-sdk/issues/373)) ([0362c13](https://github.com/redbellynetwork/safe-core-sdk/commit/0362c13e87220da12f8802dd8f0ea29923adbf6a))
+- **protocol-kit:** safeDeploymentConfig is an optional parameter in PredictedSafeProps ([#430](https://github.com/redbellynetwork/safe-core-sdk/issues/430)) ([66f6712](https://github.com/redbellynetwork/safe-core-sdk/commit/66f6712269368c052cf9b1c49caf34fd888f0de4))
+- **protocol-kit:** zksync deployment address predict ([#509](https://github.com/redbellynetwork/safe-core-sdk/issues/509)) ([8d6ae8c](https://github.com/redbellynetwork/safe-core-sdk/commit/8d6ae8c1519f291817141d9a87732d591ca55634))
+- remove comment ([6787f87](https://github.com/redbellynetwork/safe-core-sdk/commit/6787f87481c75ab17c6b26138efcce39c253b2bb))
+- Remove eth-ens package and use ethers sub-module instead for namehash ([d9026fe](https://github.com/redbellynetwork/safe-core-sdk/commit/d9026fedcb97fbe5de67f51bb3c1aaddd5045878))
+- Replace substr with slice, remove async from method ([87b974c](https://github.com/redbellynetwork/safe-core-sdk/commit/87b974cf68c4199dd99f47e8e33c07a001537139))
+- require version + bump versions ([9584607](https://github.com/redbellynetwork/safe-core-sdk/commit/9584607bf25bc005b5bdaa343dd3ba98e1879aac))
+- Safe version feature helper ([4e7d01d](https://github.com/redbellynetwork/safe-core-sdk/commit/4e7d01d95115edf4bd9202a1a4f96d344a3115a4))
+- safeTxGas estimation parse for Ethers v6 ([#584](https://github.com/redbellynetwork/safe-core-sdk/issues/584)) ([46ba3ec](https://github.com/redbellynetwork/safe-core-sdk/commit/46ba3ec0d9d12cf71ad402aa05c9a2729fcd530e))
+- Streamline error handling for ens lookup in both adapters ([371ec1b](https://github.com/redbellynetwork/safe-core-sdk/commit/371ec1bb6739443e2ab7a91d769db04945809c83))
+- TokenInfoListResponse results type ([#408](https://github.com/redbellynetwork/safe-core-sdk/issues/408)) ([44b379f](https://github.com/redbellynetwork/safe-core-sdk/commit/44b379fcc9d155e7836fa7e58f186836f4425723))
+- update safe-deployments ([#340](https://github.com/redbellynetwork/safe-core-sdk/issues/340)) ([017fbba](https://github.com/redbellynetwork/safe-core-sdk/commit/017fbba629303cbffed15f65eb8ef4ed75eae8d4))
+- use type string for uint256 parameters ([#404](https://github.com/redbellynetwork/safe-core-sdk/issues/404)) ([3713b2a](https://github.com/redbellynetwork/safe-core-sdk/commit/3713b2a03dcd797eea7496503eb6f439e36c5cf9))
