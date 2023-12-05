@@ -13,6 +13,15 @@
     "prepare": "husky install",
     "release": "standard-version && git push --follow-tags && npm publish"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redbellynetwork/safe-core-sdk.git"
+  },
+  "keywords": [
+    "Ethereum",
+    "Wallet",
+    "Safe"
+  ],
   "workspaces": {
     "packages": [
       "packages/*"
