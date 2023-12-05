@@ -14,7 +14,7 @@
 
 ## <a name="install-dependencies">1. Install the dependencies</a>
 
-To integrate the [Safe Core SDK](https://github.com/safe-global/safe-core-sdk) into your Dapp or script you will need to install these dependencies:
+To integrate the [Safe Core SDK](https://github.com/redbellynetwork/safe-core-sdk) into your Dapp or script you will need to install these dependencies:
 
 ```
 @safe-global/safe-core-sdk-types
@@ -30,17 +30,17 @@ First of all, we need to create an `EthAdapter`, which contains all the required
 
 Depending on the library used by the Dapp, there are two options:
 
-- [Create an `EthersAdapter` instance](https://github.com/safe-global/safe-core-sdk/tree/main/packages/protocol-kit/src/adapters/ethers)
-- [Create a `Web3Adapter` instance](https://github.com/safe-global/safe-core-sdk/tree/main/packages/protocol-kit/src/adapters/web3)
+- [Create an `EthersAdapter` instance](https://github.com/redbellynetwork/safe-core-sdk/tree/main/packages/protocol-kit/src/adapters/ethers)
+- [Create a `Web3Adapter` instance](https://github.com/redbellynetwork/safe-core-sdk/tree/main/packages/protocol-kit/src/adapters/web3)
 
 Once the instance of `EthersAdapter` or `Web3Adapter` is created, it can be used in the SDK initialization.
 
 ### Initialize the Safe API Kit
 
-As stated in the introduction, the [Safe API Kit](https://github.com/safe-global/safe-core-sdk/tree/main/packages/api-kit) consumes the [Safe Transaction Service API](https://github.com/safe-global/safe-transaction-service). To start using this library, create a new instance of the `SafeApiKit` class, imported from `@safe-global/api-kit` and pass the URL to the constructor of the Safe Transaction Service you want to use depending on the network.
+As stated in the introduction, the [Safe API Kit](https://github.com/redbellynetwork/safe-core-sdk/tree/main/packages/api-kit) consumes the [Safe Transaction Service API](https://github.com/redbellynetwork/safe-transaction-service). To start using this library, create a new instance of the `SafeApiKit` class, imported from `@redbellynetwork/api-kit` and pass the URL to the constructor of the Safe Transaction Service you want to use depending on the network.
 
 ```js
-import SafeApiKit from '@safe-global/api-kit'
+import SafeApiKit from '@redbellynetwork/api-kit'
 
 const safeService = new SafeApiKit({ chainId })
 ```
@@ -130,7 +130,7 @@ const safeAccountConfig: SafeAccountConfig = {
 const safeSdk = await safeFactory.deploySafe({ safeAccountConfig })
 ```
 
-Calling the method `deploySafe` will deploy the desired Safe and return a Protocol Kit initialized instance ready to be used. Check the [API Reference](https://github.com/safe-global/safe-core-sdk/tree/main/packages/protocol-kit#deploysafe) for more details on additional configuration parameters and callbacks.
+Calling the method `deploySafe` will deploy the desired Safe and return a Protocol Kit initialized instance ready to be used. Check the [API Reference](https://github.com/redbellynetwork/safe-core-sdk/tree/main/packages/protocol-kit#deploysafe) for more details on additional configuration parameters and callbacks.
 
 ## <a name="create-transaction">4. Create a transaction</a>
 
