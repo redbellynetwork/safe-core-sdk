@@ -27,7 +27,7 @@ jobs:
 
           # the followings are the optional inputs - If the optional inputs are not given, then default values will be taken
           # enter the remote organization name where the signatures should be stored (Default is storing the signatures in the same repository)
-          remote-organization-name: 'safe-global'
+          remote-organization-name: 'redbellynetwork'
           # enter the  remote repository name where the signatures should be stored (Default is storing the signatures in the same repository)
           remote-repository-name: 'cla-signatures'
           #create-file-commit-message: 'For example: Creating file for storing CLA Signatures'

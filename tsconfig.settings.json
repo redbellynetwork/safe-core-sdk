@@ -25,15 +25,15 @@
     "resolveJsonModule": true,
     "baseUrl": "./",
     "paths": {
-      "@safe-global/account-abstraction-kit-poc/*": ["./packages/account-abstraction-kit/src/*"],
-      "@safe-global/api-kit/*": ["./packages/api-kit/src/*"],
-      "@safe-global/auth-kit/*": ["./packages/auth-kit/src/*"],
-      "@safe-global/onramp-kit/*": ["./packages/onramp-kit/src/*"],
-      "@safe-global/protocol-kit/*": ["./packages/protocol-kit/src/*"],
-      "@safe-global/protocol-kit/typechain/*": ["./packages/protocol-kit/typechain/*"],
-      "@safe-global/protocol-kit/hardhat/*": ["./packages/protocol-kit/hardhat/*"],
-      "@safe-global/relay-kit/*": ["./packages/relay-kit/src/*"],
-      "@safe-global/safe-core-sdk-types/*": ["./packages/safe-core-sdk-types/src/*"]
+      "@redbellynetwork/account-abstraction-kit-poc/*": ["./packages/account-abstraction-kit/src/*"],
+      "@redbellynetwork/api-kit/*": ["./packages/api-kit/src/*"],
+      "@redbellynetwork/auth-kit/*": ["./packages/auth-kit/src/*"],
+      "@redbellynetwork/onramp-kit/*": ["./packages/onramp-kit/src/*"],
+      "@redbellynetwork/protocol-kit/*": ["./packages/protocol-kit/src/*"],
+      "@redbellynetwork/protocol-kit/typechain/*": ["./packages/protocol-kit/typechain/*"],
+      "@redbellynetwork/protocol-kit/hardhat/*": ["./packages/protocol-kit/hardhat/*"],
+      "@redbellynetwork/relay-kit/*": ["./packages/relay-kit/src/*"],
+      "@redbellynetwork/safe-core-sdk-types/*": ["./packages/safe-core-sdk-types/src/*"]
     }
   },
   "exclude": ["**/dist", "**/node_modules"]
